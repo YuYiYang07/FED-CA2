@@ -19,10 +19,11 @@
 
 > Reviewer-Friendly Suggestion: If your project only requires a static site, keep the purely static version; if you need componentization, routing, or state management, then use Vue.
 
-fed-ca2/
+## 📂 Project Structure
+”“”fed-ca2/
 ├─ css/ # Style files (style.css, reset.css...)
 ├─ js/ # Script files (index.js, animation.js...)
 ├─ html/ # Page files (index.html, about.html...)
 ├─ images/ # Image resources (background images, icons...)
 ├─ gsap-public/ # GSAP animation library resources
-
+“”“
