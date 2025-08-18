@@ -1,7 +1,8 @@
-FED-CA2 — Front-End Development End-Semester-project
-personal project  (MIT license)
-Year1，Common Infocomm Technology，school of computing，Singapore Polytechnic
-A front-end project used to demonstrate **FED-CA2** assignments. Focuses on the integrated practice of **UI/UX, semantics, responsiveness, accessibility (a11y)**, and **front-end engineering**.
+## Overview
+- FED-CA2 — Front-End Development End-Semester-project
+- personal project  (MIT license)
+- Year1，Common Infocomm Technology，school of computing，Singapore Polytechnic
+- A front-end project used to demonstrate **FED-CA2** assignments. Focuses on the integrated practice of **UI/UX, semantics, responsiveness, accessibility (a11y)**, and **front-end engineering**.
 
 ## ✨ Features
 - ✅ Semantic HTML (<header> <main> <nav> <section> <footer>)
