@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "cleanUrls": true,
   "routes": [
-    { "src": "^/(css|js|images)/(.*)$", "dest": "/$1/$2" },
     { "src": "^/$", "dest": "/html/index.html" },
-    { "src": "^/([^./]+)$", "dest": "/html/$1.html" },
-    { "src": "^/(.*)$", "dest": "/html/$1" }
+    { "src": "^/(css|js|images|gsap-public)/(.*)$", "dest": "/$1/$2" },
+    { "src": "^/([^./]+)$", "dest": "/html/$1.html" }
   ]
 }
