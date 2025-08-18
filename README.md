@@ -15,7 +15,7 @@
 ## 📦 Tech Stack
 - Foundation: **HTML5 + CSS3 + JavaScript (ES6+)**
 - UI: **TailwindCSS / Bootstrap / Element Plus (Vue only)**
-- animation: **GSAP**
+- animation: **GSAP**, downloaded , so no commercial use
 
 > Reviewer-Friendly Suggestion: If your project only requires a static site, keep the purely static version; if you need componentization, routing, or state management, then use Vue.
 
