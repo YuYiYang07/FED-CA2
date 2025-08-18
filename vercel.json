@@ -1,21 +1,10 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/css/(.*)",
-      "destination": "/css/$1"
-    },
-    {
-      "source": "/images/(.*)",
-      "destination": "/images/$1"
-    },
-    {
-      "source": "/js/(.*)",
-      "destination": "/js/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/html/$1"
-    }
+  "routes": [
+    { "src": "^/(css|js|images)/(.*)$", "dest": "/$1/$2" },
+    { "src": "^/$", "dest": "/html/index.html" },
+    { "src": "^/([^./]+)$", "dest": "/html/$1.html" },
+    { "src": "^/(.*)$", "dest": "/html/$1" }
   ]
 }
