@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Author   : Yu Yi Yang (p2526458) 
+    Course   : Common InfoComm Technology (Year 1, AY2025/2026)
+    Class    : 1A/05 (Full-Time Diploma)
+    Module   : Front-End Development CA2 – Interactive website
+    File     : info.html
+    Purpose  : Specific information page for FED CA2 website project
+    Timeline : Started on 20 Jul 2025, 23:56 
+               Completed on 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA2</title>
+
+
+    <!-- link to the Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/static_global.css">
+    <link rel="stylesheet" href="../css/info.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="../images/SP.png">
+
+
+</head>
+<header>
+    <nav class="navigation_bar" id="home_nav">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="info.html">information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Feedbacks</a>
+            </li>
+            <div class="nav-item dropdown" id="NavRightButton">
+                <a class=" " id="settings" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu">
+                    <li><button id="toggleBtn" class="dropdown-item btn btn-dark mt-3" onclick="toggleDark()">switch
+                            the
+                            mode</button></li>
+                    <li><a class="dropdown-item" href="#">Switch Language</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
+            </div>
+        </ul>
+
+    </nav>
+
+
+
+    <script src="../js/dark-mode-toggle.js"></script>
+    <script src="../js/navigation-bar.js"></script>
+</header>
+
+
+<main>
+
+    <section id="info_part1">
+        <div class="container">
+            <div class="animate-me" aria-hidden="true">
+                <p>
+                    <strong>Chinese New Year, also known as the Spring Festival</strong>, is the most important
+                    traditional
+                    festival in
+                    China.
+                    It marks the beginning of the lunar new year, typically occurring between late January and
+                    mid-February,
+                    based
+                    on the Chinese lunisolar calendar.
+                    Chinese New Year is a time for family reunions, ancestor worship, and celebrations.
+                    Each year is associated with
+                    one of the 12 animals in the Chinese zodiac. The celebration lasts 15 days, ending with the
+                    Lantern
+                    Festival.
+                </p>
+            </div>
+            <p class="sr-only">
+                <strong>Chinese New Year, also known as the Spring Festival</strong>, is the most important
+                traditional
+                festival in
+                China.
+                It marks the beginning of the lunar new year, typically occurring between late January and
+                mid-February,
+                based
+                on the Chinese lunisolar calendar.
+                Chinese New Year is a time for family reunions, ancestor worship, and celebrations.
+                Each year is associated with
+                one of the 12 animals in the Chinese zodiac. The celebration lasts 15 days, ending with the Lantern
+                Festival.
+            </p>
+        </div>
+
+        <script src="../gsap-public/minified/gsap.min.js"></script>
+        <script src="../gsap-public/minified/SplitText.min.js"></script>
+
+    </section>
+
+
+
+    <section id="info_part2">
+        <img src="../images/red_fish.png" alt="red-fish-image" id="red-fish-image">
+        <div id="things_info_part2">
+            <strong>The Origin and A Folk Talk</strong>
+            <p>In ancient China, people feared a monster called Nian that awakened every lunar new year to devour
+                crops, livestock, and villagers. One year, a wise old man told terrified villagers to cover their
+                homes with red paper and prepare bamboo bundles. When Nian arrived, it recoiled at the bright red
+                decorations. The villagers then lit the bamboo, which crackled loudly with sparks. The combination
+                of red and explosive noise frightened Nian away forever. Since then, Chinese New Year traditions -
+                red decorations, firecrackers, and greetings - come from this legend of scaring away the beast.
+            </p>
+            <div id="statistics_info_part2">
+                <span class="stat">
+                    History of 3,000+ years
+
+                    <!-- button -->
+                    <i class="time-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-history"
+                        aria-controls="offcanvas-history"></i>
+                </span>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas-history"
+                    aria-labelledby="offcanvas-history-label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvas-history-label">History of 3000+ years
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                            style="width: 1vw; height: 1vh;"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="../images/beast.jpg" alt="beast-image" class="info-2-stat-image">
+                        <p
+                            style="color: rgb(201, 201, 201); font-size: 0.75em; line-height: 1.1; margin-top: 10%; display: block; max-width: 90%;">
+                            This story take place 3000+ years ago. After the villagers survived, They celebrated
+                            their
+                            victory against the beast Thus, the celebration of the Lunar New Year became known
+                            as
+                            "Guo Nian" (Passing the Nian/Passing the Year) It symbolizes the power of the
+                            people finally overcomes the beast, and the guidance by the wisdom finally
+                            pulverized 'NIAN'
+                        </p>
+                    </div>
+                </div>
+
+                <span class="stat">
+                    Since aprx. 200 Year BC
+                    <!-- button -->
+                    <i class="time-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-establishment"
+                        aria-controls="offcanvas-establishment">
+                    </i>
+                </span>
+                <!-- offcanvas container -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas-establishment"
+                    aria-labelledby="offcanvas-establishment-label">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvas-establishment-label">
+                            Since est.1600 Year BC
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <img src="../images/establish.jpg" alt="beast-image" class="info-2-stat-image">
+                        <p
+                            style="color: rgb(201, 201, 201); font-size: 0.75em; line-height: 1.1; margin-top: 10%; display: block; max-width: 90%;">
+                            it since 1600 years ago, Emperor unified the calendar under the Taichu Calendar.This
+                            turned scattered
+                            regional celebrations into a
+                            nationwide ritual. Key customs like hanging peach wood charms (to ward off evil) and
+                            holding tribal feasts
+                            became widespread, laying the foundation for Spring Festival traditions</p>
+                    </div>
+                </div>
+                <span class="stat">
+                    Flourished about 800 AD
+
+                    <!-- button -->
+                    <i class="time-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-flourish"
+                        aria-controls="offcanvas-flourish"></i>
+                </span>
+                <!-- offcanvas container -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas-flourish"
+                    aria-labelledby="offcanvas-flourish-label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvas-flourish-label">Flourished ard. 256 BC
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <img src="../images/qingming.jpg" alt="beast-image" class="info-2-stat-image">
+                        <p
+                            style="color: rgb(201, 201, 201); font-size: 0.75em; line-height: 1.1; margin-top: 10%; display: block; max-width: 90%;">
+                            Lantern displays,
+                            street performances, and temple fairs flourished in cities like Chang'an.
+                            Firecrackers (made from burning
+                            bamboo) became popular to dispel misfortune.
+                            People
+                            exchanged "New Year's
+                            cards" (handwritten notes on paper) and paper-cut window decorations. Markets sold
+                            seasonal goods, and
+                            public entertainment
+                            like puppet shows thrived.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="info_part3">
+
+        <div class="container3d" id="container3d">
+            <h2>The historical evolution in Dynasties</h2>
+            <div class="timeline-line opacity-0"></div>
+            <!-- <div class="controls">
+                    <button class="btn-custom" onclick="showBlinds()">百叶窗</button>
+                    <button class="btn-custom" onclick="expandCards()">展开</button>
+                    <button class="btn-custom" onclick="resetAnimation()">重置</button>
+                </div> -->
+
+            <!-- Han Dynasty -->
+
+            <div class="photo-card card border-0 rounded shadow-lg -rotate-x-90  blinds-closed perspective-origin-center"
+                data-card="1">
+                <img src="../images/han.jpg" class="photo-card_img" alt="">
+                <div class="card-body card-content">
+                    <h5 class="card-title text-gray-800 fs-5 fw-bold">Han Dynasty</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small">206 BC ~ 220 AD</h6>
+                    <p class="card-text text-gray-600 small">
+                        The Taichu Calendar set Lunar New Year as a national observance. Peach wood charms, tribal
+                        feasts,
+                        and unified customs laid the groundwork for Spring Festival culture.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tang Dynasty -->
+            <div class="photo-card card border-0 rounded shadow-lg -rotate-x-60 z-10 blinds-closed" data-card="2">
+                <img src="../images/tang.jpg" class="photo-card_img" alt="">
+                <div class="card-body card-content">
+                    <h5 class="card-title text-gray-800 fs-5 fw-bold">Tang Dynasty</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small">618 AD ~ 907 AD</h6>
+                    <p class="card-text text-gray-600 small">
+                        A golden age of celebration: public holidays, court gatherings, lanterns, street shows,
+                        temple
+                        fairs, and firecracker rituals (from bamboo) flourished.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Song Dynasty -->
+            <div class="photo-card card border-0 rounded shadow-lg -rotate-x-60 z-10 blinds-closed" data-card="3">
+                <img src="../images/song.jpg" class="photo-card_img" alt="">
+                <div class="card-body card-content">
+                    <h5 class="card-title text-gray-800 fs-5 fw-bold">Song Dynasty</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small">960 AD ~ 1279 AD</h6>
+                    <p class="card-text text-gray-600 small">
+                        Gunpowder firecrackers took over. People exchanged greeting cards, used paper cuttings, gave
+                        red
+                        envelopes to children, and enjoyed markets and puppet shows.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ming Dynasty -->
+            <div class="photo-card card border-0 rounded shadow-lg -rotate-x-60 z-10 blinds-closed" data-card="4">
+                <img src="../images/yuan.jpg" class="photo-card_img" alt="">
+                <div class="card-body card-content">
+                    <h5 class="card-title text-gray-800 fs-5 fw-bold">Ming Dynasty</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small">1368 AD ~ 1644 AD</h6>
+                    <p class="card-text text-gray-600 small">
+                        Red became symbolic. Spring couplets replaced peach charms; family feasts and staying up
+                        late
+                        (shousui) gained importance. "Guo Nian" became a universal term.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Qing Dynasty -->
+            <div class="photo-card card border-0 rounded shadow-lg -rotate-x-60 z-10 blinds-closed" data-card="5">
+                <img src="../images/qing.jpg" class="photo-card_img" alt="">
+                <div class="card-body card-content">
+                    <h5 class="card-title text-gray-800 fs-5 fw-bold">Qing Dynasty</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small">1644 AD ~ 1912 AD</h6>
+                    <p class="card-text text-gray-600 small">
+                        Manchu and Han customs merged. The Temple of Heaven ritual became central. Dumplings grew
+                        widespread, and traditions spread globally with the diaspora.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="info_part4">
+        <h2>The Days before the New Year Eve</h2>
+        <div class="main-container">
+            <!-- 左侧卡片显示区域 -->
+            <div class="cards-area">
+
+                <!-- Day 23 卡片 -->
+                <div class="day-card active" id="day-card-0">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 23</div>
+                            <div class="day-description">
+                                On Day 23, families gather to bid farewell to the Kitchen God who ascends to heaven.
+                                Sticky "malty candies" (tanggua) are offered to sweeten his lips, ensuring he
+                                reports
+                                only good deeds to the Jade Emperor. Smoke from burning paper horses rises as
+                                households
+                                whisper prayers for blessings—a ritual blending reverence and cunning to secure
+                                divine
+                                favor for the coming year.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="../images/candy.jpg" alt="送灶神" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 24 卡片 -->
+                <div class="day-card" id="day-card-1">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 24</div>
+                            <div class="day-description">
+                                Day 24 erupts in a whirlwind of cleansing! Brooms sweep ceilings to evict
+                                "inauspicious
+                                dust" (huichen), while windows are scrubbed until they gleam. This vigorous
+                                purge—known
+                                as "Da Sao Chu"—symbolizes banishing misfortune, making space for new luck to settle
+                                in
+                                every freshly polished corner.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop"
+                                alt="大扫除" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 25 卡片 -->
+                <div class="day-card" id="day-card-2">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 25</div>
+                            <div class="day-description">
+                                The whirr of stone mills fills Day 25 as households grind soybeans for "fortune
+                                tofu"
+                                (doufu). Its white purity embodies renewal, while fermented "stinky tofu" serves as
+                                a
+                                humorous offering to hungry ghosts—a balance of elegance and earthy pragmatism in
+                                food
+                                symbolism.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="../images/tofu.jpg" alt="磨豆腐" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 26 卡片 -->
+                <div class="day-card" id="day-card-3">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 26</div>
+                            <div class="day-description">
+                                Day 26 buzzes with renewal! Barbershops overflow as men shave heads (tito), while
+                                homes
+                                steam with herb-infused baths. Cutting away "old hair" (jiufa, homophone for
+                                "misfortune") and washing off grime prepare bodies—and spirits—for rebirth at year's
+                                turn.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="../images/Haircut.jpg" alt="洗澡理发" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 27 卡片 -->
+                <div class="day-card" id="day-card-4">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 27</div>
+                            <div class="day-description">
+                                Steam billows from kitchens on Day 27 as women knead dough into plump "fortune buns"
+                                (mantou). Towers of stacked buns symbolize wealth accumulation, while floral cuts on
+                                buns mimic blooming prosperity—edible hope rising in bamboo steamers.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop"
+                                alt="蒸馒头" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 28 卡片 -->
+                <div class="day-card" id="day-card-5">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 28</div>
+                            <div class="day-description">
+                                Day 28 explodes in carnival chaos! Streets cram with vendors hawking red lanterns,
+                                dried
+                                meats, and melon seeds. Families jostle through markets, stuffing baskets with New
+                                Year
+                                treasures—a vibrant scramble to gather abundance before the final countdown.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="../images/Supermarket.jpg" alt="采购年货" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 29 卡片 -->
+                <div class="day-card" id="day-card-6">
+                    <div class="card-main">
+                        <div class="text-content">
+                            <div class="day-title">Day 29</div>
+                            <div class="day-description">
+                                Day 29 dawns with the scent of ink! Families paste vermilion spring couplets
+                                (chunlian)
+                                beside doors—brushed with gold characters proclaiming hopes for fortune. The
+                                upside-down
+                                "Fu" (福, blessing) charms on windows wink with playful rebellion, turning walls into
+                                crimson canvases of poetic aspirations.
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <img src="../images/chunlian.jpg" alt="贴春联" class="day-image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 右侧滚轮控制区域 -->
+            <div class="wheel-area">
+                <div class="wheel">
+                    <!-- 滚轮刻度标记 -->
+                    <div class="wheel-marks">
+                        <div class="wheel-mark" style="top: 28px;" onclick="selectDay(0)"></div>
+                        <div class="wheel-mark" style="top: 85px;" onclick="selectDay(1)"></div>
+                        <div class="wheel-mark" style="top: 142px;" onclick="selectDay(2)"></div>
+                        <div class="wheel-mark" style="top: 199px;" onclick="selectDay(3)"></div>
+                        <div class="wheel-mark" style="top: 256px;" onclick="selectDay(4)"></div>
+                        <div class="wheel-mark" style="top: 313px;" onclick="selectDay(5)"></div>
+                        <div class="wheel-mark" style="top: 370px;" onclick="selectDay(6)"></div>
+                    </div>
+                    <!-- 滚轮标签 -->
+                    <div class="wheel-labels">
+                        <div class="wheel-label" style="top: 23px;" onclick="selectDay(0)">23</div>
+                        <div class="wheel-label" style="top: 80px;" onclick="selectDay(1)">24</div>
+                        <div class="wheel-label" style="top: 137px;" onclick="selectDay(2)">25</div>
+                        <div class="wheel-label" style="top: 194px;" onclick="selectDay(3)">26</div>
+                        <div class="wheel-label" style="top: 251px;" onclick="selectDay(4)">27</div>
+                        <div class="wheel-label" style="top: 308px;" onclick="selectDay(5)">28</div>
+                        <div class="wheel-label" style="top: 365px;" onclick="selectDay(6)">29</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="info_part5">
+        <div class="inner-scroll-area">
+            <div class="scroll-content">
+                <div class="animation-viewport">
+                    <!-- 舞狮视频 -->
+                    <div class="video-container">
+                        <video class="lion-dance-video" autoplay muted loop>
+                            <source src="../images/fireworks.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+
+                    <!-- 最终的flex布局 -->
+                    <div class="flex-container">
+                        <div class="flex-video">
+                            <div class="flex-video-content">
+                                <img src="../images/feast.jpg" alt="feast">
+                            </div>
+                        </div>
+                        <div class="flex-description">
+                            <h2>New Year Eve</h2>
+                            <p>New Year's Eve dinner is Asia's grandest family gathering! Northerners wrap good luck
+                                in dumplings (shaped like gold ingots), while southerners steam rice cakes
+                                (symbolizing prosperity).</p>
+                            <p>In Singapore, we scoop up "yu sheng" (sashimi)—tossing it high with chopsticks and
+                                making wishes loudly! Why? Because sharing a meal can bring scattered hearts
+                                together like a warm blanket, shielding us from the chill of life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="info_part6">
+
+        <h2>After The Chinese New Year Eve</h2>
+
+        <ul class="tab-switcher">
+            <li class="tab-item active" data-tab="tab1">Visiting relatives</li>
+            <li class="tab-item" data-tab="tab2">Lantern Shows</li>
+            <li class="tab-item" data-tab="tab3">Eating Tangyuan</li>
+            <li class="tab-item" data-tab="tab4">Back to Routine</li>
+        </ul>
+
+
+        <div class="content-area">
+            <div class="tab-content active carousel slide carousel-fade" id="tab1">
+                <img src="../images/go_relatives.jpg" alt="relatives and families" class="info6-content-image">
+                <h3>1~7day after Eve: Visiting Relatives</h3>
+                <p class="text-justify">On the first and second days of the New Year, families go house to house
+                    with Mandarin oranges in
+                    hand, exchanging greetings and catching up. Children receive red packets while elders offer
+                    words of
+                    wisdom. It's a time where warmth travels faster than the festive snacks.</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <img src="../images/lattern.jpg" alt="relatives and families" class="info6-content-image">
+                <h3>12~15day after Eve: Lantern Walks</h3>
+                <p class="text-justify">As night falls, streets light up with intricate lanterns — rabbits, dragons,
+                    and modern icons
+                    alike.
+                    Crowds gather, cameras click, laughter echoes. For a moment, the city feels like a shared living
+                    room, aglow with tradition and togetherness.</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <img src="../images/tangyuan.jpg" alt="relatives and families" class="info6-content-image">
+                <h3>15th day after Eve: Eating TangYuan</h3>
+                <p class="text-justify">Tangyuan, soft glutinous rice balls often filled with black sesame, peanut,
+                    or red bean, are
+                    served
+                    in warm syrup. Their gentle sweetness lingers — not just on the tongue, but in the heart.</p>
+            </div>
+            <div class="tab-content" id="tab4">
+                <img src="../images/classroom.jpg" alt="relatives and families" class="info6-content-image">
+                <h3>Back to Routine, Forward with Hope</h3>
+                <p class="text-justify">Although holidays coming to a close, students return to school and adults to
+                    their workplaces.
+                    But
+                    the spirit of the New Year doesn't end — it lingers in lunchbox notes, in office pantry oranges,
+                    in
+                    the way people greet each other with a touch more kindness.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="info_part7">
+        <div id="info_part7-main" class="flex  overflow-x-auto scroll-smooth gap-8 ">
+
+            <div class="card-info7 snap-center flex-shrink-0   shadow-lg flex flex-col justify-center text-center"
+                id="info7-hero-card">
+
+                <h2>The Future of Chinese New Year</h2>
+
+                <div style="display:flex; flex-direction: row;" class="info7-fisrtCard-small">
+                    <h6>please scroll to the right</h6>
+                    <img src="../images/toward-right.png" alt="array"
+                        style="width: 21px; height: 21px; margin-top: 25%; margin-left: 7%;">
+                </div>
+            </div>
+
+            <div class="card-info7 snap-center flex-shrink-0  shadow-lg flex flex-col justify-center text-center">
+                <div>
+                    <img src="../images/ATM.jpg" class="img-info7 mb-4" alt="ATM">
+                </div>
+                <p><strong>Future Red Envelopes</strong> is beyond simple e-payments. Powered by
+                    blockchain and smart contracts. Secure, traceable, warm.</p>
+            </div>
+
+            <div class="card-info7 snap-center flex-shrink-0   shadow-lg flex flex-col justify-center text-center">
+                <div>
+                    <img src="../images/drone.jpg" class="img-info7  mb-4" alt="Drone">
+                </div>
+                <p><strong>Eco-Friendly Fireworks</strong> use soundless, smoke-free compounds
+                    and AI drones. Green, quiet, spectacular.</p>
+            </div>
+
+            <div class="card-info7 snap-center flex-shrink-0   shadow-lg flex flex-col justify-center text-center">
+                <div>
+                    <img src="../images/universe.jpg" class="img-info7 mb-4" alt="Space">
+                </div>
+                <p><strong>Celebrating in Space</strong> with holograms, zero-gravity food, and
+                    quantum greetings. Distant, yet connected.</p>
+            </div>
+
+            <div class="card-info7 snap-center flex-shrink-0  shadow-lg flex flex-col justify-center text-center">
+                <div>
+                    <img src="../images/AI.jpg" class="img-info7 mb-4" alt="AI">
+                </div>
+                <p><strong>Cultural Continuity</strong> through AR and VR storytelling. Powered by artificial
+                    intelligence.
+                    Timeless spirit, modern form.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer_main">
+            <div>
+                <ul class="social-media-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61561230015086" aria-label="facebook"><i
+                                id="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/yuhyyang/" aria-label="instagram"><i
+                                id="icon-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yu-yiyang-868487361/" aria-label="linked-in"><i
+                                id="icon-linkedin"></i></a></li>
+                    <li><a href="https://www.douyin.com/user/MS4wLjABAAAA9DaqaIy2Wa-z7AW5ckBv4DYUdp1AOpcWkCDYjPHAeg_0dygIg4KEKUYL1aa4H5WS?from_tab_name=main"
+                            aria-label="tiktok"><i id="icon-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-links">
+                    <li><a href="https://yuyiyang.vercel.app">About the Author</a></li>
+                    <li><a href="https://yyy-login.vercel.app">Report
+                            Vulnerability&#160;</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/privacy/privacystatement">Privacy Statement</a>
+                    </li>
+                    <li><a href="https://policies.google.com/terms?hl=en-US">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div id="personal_contact_info">
+                <p>SCHOOL EMAIL: </p>
+                <p>YIYANG.25@ICHAT.SP.EDU.SG</p>
+            </div>
+        </div>
+        <p class="rights">&copy;2025, YU YIYANG | Front-End-Development CA2</p>
+        <p class="rights"><img src="../images/SP.png" id="SP_logo" alt="sp-logo"> Diploma in Common InfoComm Technology
+            Year1
+            Class-05</p>
+    </footer>
+
+</main>
+
+<script src="../js/info.js"></script>
+</body>
+
+</html>

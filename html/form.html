@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA2</title>
+
+
+    <!-- link to the Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/static_global.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation_bar" id="home_nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Feedbacks</a>
+                </li>
+                <div class="nav-item dropdown" id="NavRightButton">
+                    <a class=" " id="settings" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                        <li><button id="toggleBtn" class="dropdown-item btn btn-dark mt-3" onclick="toggleDark()">switch
+                                the
+                                mode</button></li>
+                        <li><a class="dropdown-item" href="#">Switch Language</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                    </ul>
+                </div>
+            </ul>
+
+        </nav>
+
+
+
+
+        <script src="../js/dark-mode-toggle.js"></script>
+        <script src="../js/navigation-bar.js"></script>
+    </header>
+
+    <main style="font-family: Figtree; font-weight: 600;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto my-5">
+                    <br>
+                    <div style="font-size: 2.5em; text-align: center;">Feedback and Comments</div>
+                    <br><br>
+                    <form id="signupForm">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                            <label for="floatingInput" class="form-label">Email</label>
+                            <div class="validation-message" id="emailMessage"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="William Lee">
+                            <label for="floatingInput">Name or Nickname</label>
+                        </div>
+                        <br>
+
+
+                        <br>
+
+                        <div class="input-group" style="display: flex; flex-direction: column;">
+                            <div style="font-size: 1.05em; margin-bottom: 10px;">*If you are from SP (optional)
+                            </div>
+                            <div style="display: flex; flex-direction: row;">
+                                <input type="text" aria-label="class" class="form-control" placeholder="Diploma">
+                                <input type="text" aria-label="class" class="form-control" placeholder="Class">
+                                <input type="text" aria-label="id" class="form-control" placeholder="student-ID">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <br>
+
+                        <div style="font-size: 1.05em; margin-bottom: 10px;">Gender</div>
+                        <div id="gender" style="display: flex; flex-direction: row; gap: 50px;">
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="form-check-label" for="radioDefault1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                    checked>
+                                <label class="form-check-label" for="radioDefault2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <hr><br>
+
+
+
+
+                        <div class="mb-3">
+                            <label for="contentRating" class="form-label">Rate for the content: <span id="contentVal"
+                                    class="fw-semibold">5</span>/10</label>
+                            <input type="range" class="form-range" id="contentRating" min="0" max="10" step="0.5"
+                                value="5" list="tickmarks1">
+                            <datalist id="tickmarks1">
+                                <option value="0"></option>
+                                <option value="5"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="techniqueRating" class="form-label">Rate for the techniques: <span
+                                    id="techniqueVal" class="fw-semibold">5</span>/10</label>
+                            <input type="range" class="form-range" id="techniqueRating" min="0" max="10" step="0.5"
+                                value="5" list="tickmarks2">
+                            <datalist id="tickmarks2">
+                                <option value="0"></option>
+                                <option value="5"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="designRating" class="form-label">Rate for the Design: <span id="designVal"
+                                    class="fw-semibold">5</span>/10</label>
+                            <input type="range" class="form-range" id="designRating" min="0" max="10" step="0.5"
+                                value="5" list="tickmarks3">
+                            <datalist id="tickmarks3">
+                                <option value="0"></option>
+                                <option value="5"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </div>
+
+
+                        <div class="rating-container card">
+                            <div class="rating-label"><strong>Rate for the overall website</strong></div>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1">★</label>
+                            </div>
+                        </div>
+                        <br>
+
+
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="We Values Your Feedbacks"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success" id="refineWithAI">Refine your draft by
+                            AI</button>
+                        <button type="button" class="btn btn-primary" style="margin-left: 10%;">Share My Comment By
+                            ClipBoard</button>
+
+                        <div class="ai-loading" id="aiLoading" style="display: none;">
+                            <div class="loading-spinner"></div>
+                            <div class="loading-text">AI is analyzing your text...</div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div class="alert alert-danger py-2">⚠ Submitted content containing rumors,
+                            advertisements, pornography or violence will be detected by AI and rejected by the
+                            system.</div>
+                        <br>
+
+
+                        <div class="danmaku-container" id="danmakuContainer">
+                            <div class="danmaku-title">Comment by Professionals</div>
+                        </div>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected> Will you recommend this web page to your friend?</option>
+                            <option value="1">Yes!</option>
+                            <option value="2">I have no idea </option>
+                            <option value="3">Absolutely not! it's bull shit </option>
+                        </select>
+                        <br>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                            <label class="form-check-label" for="switchCheckDefault">Did this webpage I created
+                                break your stereotype or make you feel more favorable towards Chinese New
+                                Year?</label>
+                        </div>
+                        <br>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="radio-button1">
+                            <label class="form-check-label" for="switchCheckDefault">I pledge allegiance toward
+                                protecting global cultural heritage and keeping the spirit of Chinese New Year
+                                alive.</label>
+                        </div>
+                        <br>
+
+                        <input type="file" id="fileInput1" style="display: none; ">
+                        <button type="button" class="btn btn-primary upload_btn"
+                            onclick="document.getElementById('fileInput1').click()">
+                            <strong style="color: aliceblue;">Upload Your signature</strong>
+                        </button>
+
+                        or
+
+                        <a href="https://portal.singpass.gov.sg/home/ui/login" class="btn btn-danger upload_btn"
+                            style="padding-left: 13px; padding-right: 12px; ">
+                            <strong style="letter-spacing: 0.03em; font-weight: 630; color: aliceblue;">Proceed an
+                                E-sign via</strong>
+                            <strong
+                                style="letter-spacing: 0.05em; font-weight: 830; color: aliceblue;">SingPass</strong>
+                        </a>
+
+
+
+
+
+
+
+                        <hr><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Check1">
+                            <label class="form-check-label" for="defaultCheck1" style="color: rgb(55, 54, 54);">
+                                I agree with the <a href="https://policies.google.com/terms?hl=en-US">terms</a>
+                                and
+                                <a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a>
+                            </label>
+                        </div>
+                        <br>
+
+                        <hr>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body"
+                                style="background-color: rgb(212, 212, 212); border-radius: 0px; display: flex; flex-direction: row;">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkRobot"
+                                        style="margin-top: 15px;">
+                                    <label class="form-check-label" for="checkIndeterminate" style="margin-left: 10px;">
+                                        <p style="margin-top: 12px;">I'M NOT A ROBOT</p>
+                                    </label>
+                                </div>
+                                <div>
+                                    <img src="../images/captcha.png" alt="recaptcha logo"
+                                        style="width: 50px; height: 50px; margin-left: 20px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="validation-message" id="robotMessage"></div>
+                        <br><br>
+                        <button type="submit" class="btn btn-primary" style="color: aliceblue !important;"
+                            id="submitBtn">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer_main">
+            <div>
+                <ul class="social-media-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61561230015086" aria-label="facebook"><i
+                                id="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/yuhyyang/" aria-label="instagram"><i
+                                id="icon-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yu-yiyang-868487361/" aria-label="linked-in"><i
+                                id="icon-linkedin"></i></a></li>
+                    <li><a href="https://www.douyin.com/user/MS4wLjABAAAA9DaqaIy2Wa-z7AW5ckBv4DYUdp1AOpcWkCDYjPHAeg_0dygIg4KEKUYL1aa4H5WS?from_tab_name=main"
+                            aria-label="tiktok"><i id="icon-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-links">
+                    <li><a href="https://yuyiyang.vercel.app">About Author</a></li>
+                    <li><a href="https://yyy-login.vercel.app">Report
+                            Vulnerbl&#160;</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/privacy/privacystatement">Privacy Statemt</a>
+                    </li>
+                    <li><a href="https://policies.google.com/terms?hl=en-US">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div id="personal_contact_info">
+                <p>SCHOOL EMAIL: </p>
+                <p>YIYANG.25@ICHAT.SP.EDU.SG</p>
+            </div>
+        </div>
+        <p class="rights">&copy;2025, YU YIYANG | Front-End-Development CA2</p>
+        <p class="rights"><img src="../images/SP.png" id="SP_logo" alt="sp-logo"> Diploma in Common InfoComm Technology
+            Year1
+            Class-05</p>
+    </footer>
+
+    <!-- AI警告模态框 -->
+    <div id="aiModal" class="ai-modal">
+        <div class="ai-modal-content">
+            <div class="warning-icon">⚠️</div>
+            <h4> security alert </h4>
+            <p>This website is not secure, the API key cannot be displayed, and the AI cannot connect.
+
+            <p class="text-muted">Your original text has been retained. Please modify it manually.</p>
+            <button type="button" class="btn btn-primary" onclick="closeAIModal()">OK</button>
+        </div>
+    </div>
+
+
+    <div id="submitSuccessModal" class="ai-modal">
+        <div class="ai-modal-content success-modal">
+            <div class="success-icon">🎉</div>
+            <h3>Thank you for your feedback! </h3>
+            <p>Your feedback is very important to us, and we will seriously consider your suggestions. </p>
+            <div class="modal-buttons">
+                <button type="button" class="btn btn-outline-primary" onclick="fillAnotherForm()">
+                    Fill out the form again
+                </button>
+                <button type="button" class="btn btn-primary" onclick="returnToHome()">
+                    Return to homepage
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/better_bootstap.js"></script>
+
+</body>
+
+</html>
